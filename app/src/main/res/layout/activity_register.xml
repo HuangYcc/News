@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#CD3333"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/left"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="注册页面"
+            android:textColor="#D3D3D3"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/save_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="提交"
+            android:textColor="#D3D3D3"
+            android:gravity="center"
+            android:textSize="16sp"/>
+        </LinearLayout>
+
+  <ImageView
+      android:id="@+id/shangchuan_head"
+      android:layout_width="120dp"
+      android:layout_height="120dp"
+      android:layout_gravity="center"
+      android:layout_margin="10dp"
+      android:src="@drawable/shangchuan"/>
+
+    <EditText
+        android:id="@+id/register_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="请输入用户名" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入用户密码"
+        android:password="true" />
+
+    <EditText
+        android:id="@+id/register_repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="请再次输入密码"
+        android:password="true" />
+    <!--<Button
+        android:id="@+id/save_user"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="注册" />-->
+    <CheckBox
+        android:id="@+id/checkbox_tiaokuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我已同意News使用条款"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="#ff0000"
+        />
+
+</LinearLayout> 
